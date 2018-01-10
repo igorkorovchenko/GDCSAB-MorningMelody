@@ -1,0 +1,125 @@
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.igorkorovchenko.morningmelody.MainActivity">
+
+    <ImageView
+        android:id="@+id/card_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tone_pad"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/morning_card" />
+
+    <LinearLayout
+        android:id="@+id/tone_pad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/first_moto">
+
+        <Button
+            android:id="@+id/button_C1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#BC8F8F"
+            android:text="C"/>
+
+        <Button
+            android:id="@+id/button_D1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#F4A460"
+            android:text="D"/>
+
+        <Button
+            android:id="@+id/button_E1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#DAA520"
+            android:text="E"/>
+
+        <Button
+            android:id="@+id/button_F1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#B8860B"
+            android:text="F"/>
+
+        <Button
+            android:id="@+id/button_G1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#CD853F"
+            android:text="G"/>
+
+        <Button
+            android:id="@+id/button_A1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#D2691E"
+            android:text="A"/>
+
+        <Button
+            android:id="@+id/button_H1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#8B4513"
+            android:text="H"/>
+
+        <Button
+            android:id="@+id/button_C2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#A0522D"
+            android:text="C"/>
+
+        <Button
+            android:id="@+id/button_D2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#A52A2A"
+            android:text="D"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/first_moto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/second_moto"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:text="@string/make_your_morning_melody"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/second_moto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:text="@string/have_a_nice_day"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:fontFamily="cursive"/>
+
+</android.widget.RelativeLayout>
